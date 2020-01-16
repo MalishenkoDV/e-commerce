@@ -1,0 +1,95 @@
+.main__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: @white;
+  text-decoration: none;
+}
+
+.main__link-commerce {
+  position: relative;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: @orange;
+}
+
+.main__link-touch {
+  display: none;
+}
+
+.main__link-mobil {
+  background-color: @orange;
+  position: relative;
+  padding: 15px 127px 15px 15px;
+  margin: 0 20px;
+  box-shadow: 0px 4.55927px 9.11854px rgba(239, 139, 84, 0.2);
+}
+
+.main__link-ask {
+  opacity: 0.5;
+  text-align: center;
+  margin: 11px 0 25px;
+}
+
+.main__link-mobil::before {
+  content: "";
+  position: absolute;
+  width: 47.72px;
+  height: 50.03px;
+  left: 220px;
+  top: 0;
+  background-color: @orange-dark;
+  z-index: 5;
+}
+.main__link-mobil::after {
+  content: "";
+  position: absolute;
+  width: 17.7px;
+  height: 0.77px;
+  left: 235px;
+  top: 25px;
+  background: #C4C4C4;
+  border-radius: 15.3935px;
+  transform: rotate(-45deg);
+  z-index: 10;
+}
+.main__link-commerce::before {
+  content: "";
+  width: 7.14px;
+  height: 0.77px;
+  left: 240px;
+  top: 20px;
+  background: #C4C4C4;
+  border-radius: 15.3935px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.main__link-commerce::after {
+  content: "";
+  position: absolute;
+  width: 7.14px;
+  height: 0.77px;
+  left: 281.28px;
+  bottom: 402.91px;
+  background: #C4C4C4;
+  border-radius: 15.3935px;
+  transform: rotate(-90deg);
+}
+.main__link-touch {
+  background: radial-gradient(199.83% 125.68% at 50% -33.36%, rgba(23, 23, 24, 0) 0%, rgba(23, 23, 24, 0) 65%, rgba(23, 23, 24, 0.773497) 80.79%, #171718 86.68%, rgba(23, 23, 24, 0.13) 95.33%);
+  opacity: 0.5;
+}
+
+@media (min-width: @desktop-width) {
+  .main__link-touch {
+    display: block;
+  }
+
+  .main__link-mobil {
+    display: none;
+  }
+}

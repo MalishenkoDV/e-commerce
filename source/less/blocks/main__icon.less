@@ -1,0 +1,137 @@
+.main__icon-desktop {
+  display: none;
+}
+
+.main__icon-list {
+  position: relative;
+}
+
+.main__icon-list::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 367px;
+  left: 15px;
+  top: 0;
+  border-style: dotted;
+  background-color: #929292;
+}
+
+.main__icon-item {
+  list-style: none;
+  display: flex;
+  padding-top: 20px;
+}
+
+.main__icon-work {
+  position: relative;
+  background-image: url("../img/icon-mark.svg");
+}
+
+.main__icon-mobile {
+  color: @orange-light;
+}
+.main__poject-icon {
+  display: none;
+}
+
+.main__icon-mobile,
+.main__icon-number {
+  position: relative;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+
+  margin: 0 13px 20px 62px;
+  color: @black;
+  vertical-align: sub;
+}
+
+.main__icon-number::before {
+  content: "01";
+  position: absolute;
+  width: 41px;
+  height: 40px;
+  top: 0;
+  left: -60px;
+  background-size: 108px;
+
+}
+
+.main__icon-number-one::before {
+  content: "01";
+  color: @orange-light;
+}
+
+.main__icon-number-two::before {
+  content: "02";
+  color: @black;
+}
+
+.main__icon-number-three::before {
+  content: "03";
+  color: @black;
+}
+
+.main__icon-number-four::before {
+  content: "04";
+  color: @black;
+}
+
+.main__icon-number-five::before {
+  content: "05";
+  color: @black;
+}
+
+.main__icon-number-six::before {
+  content: "06";
+  color: @black;
+}
+
+.main__icon-btn {
+  position: relative;
+  display: block;
+  width: 13.51px;
+  height: 13.51px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  background-color: transparent;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.main__icon-btn::after {
+
+}
+
+.main__icon-item::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 1px;
+  right: -20px;
+  top: 120px;
+  background-color:  @bg-blacklight;
+}
+.main__icon-work::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  color: @black;
+}
+
+@media (min-width: @desktop-width) {
+  .main__icon-mobile {
+    display: none;
+  }
+  .main__poject-icon {
+    display: block;
+  }
+}

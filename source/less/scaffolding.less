@@ -1,0 +1,31 @@
+body {
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 400;
+  color: @black;
+  background-color: @white;
+}
+
+.body__svg {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (min-width: @mobile-width) {
+  body {
+    min-width: 320px;
+  }
+}
+@media (min-width: @desktop-width) {
+  body {
+    min-width: 1920px;
+  }
+}
